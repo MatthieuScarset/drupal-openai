@@ -13,13 +13,13 @@ Install [Lando](https://docs.lando.dev/drupal/) on your machine.
 Click on the button _Use this template_ to generate your own project, then:
 
 ```bash
-git clone git@github.com:<UsernameOrOrganization>/drupal-template.git myproject
+git clone git@github.com:<UsernameOrOrganization>/drupal-template.git drupal-openai
 
-cd myproject
+cd drupal-openai
 
-# Replace the project name (i.e. 'myproject').
-code .env.example    # ->  DRUSH_OPTIONS_URI=https://myproject.lndo.site
-code .lando.yml      # ->  name: myproject
+# Replace the project name (i.e. 'drupal-openai').
+code .env.example    # ->  DRUSH_OPTIONS_URI=https://drupal-openai.lndo.site
+code .lando.yml      # ->  name: drupal-openai
 
 # Create your env file now
 cp .env.example .env
