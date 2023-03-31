@@ -1,4 +1,4 @@
-uuid: 5df5dd5f-7e88-4044-9e8d-487826722e70
+uuid: 24f1e7c2-452e-4597-b916-26d00fe905c1
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,10 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
-_core:
-  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: olivero_main_menu
-theme: olivero
-region: primary_menu
+    - claro
+id: claro_menu
+theme: claro
+region: content
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
@@ -22,6 +20,10 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 2
-  expand_all_items: true
-visibility: {  }
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/admin\r\n/admin/*"
