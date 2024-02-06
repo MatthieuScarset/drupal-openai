@@ -1,42 +1,24 @@
-# Drupal project template
+# Drupal Open AI
 
-Get a working Drupal website locally in minutes with this fine-tuned template.
-
-Based on the great [Drupal Composer project](https://github.com/drupal-composer/drupal-project).
+A demo project template to POC AI-related things with Drupal.
 
 ## Requirement
 
-Install [Lando](https://docs.lando.dev/drupal/) on your machine.
+Install [Lando](https://lando.dev/) on your machine.
 
-## Usage
-
-Click on the button _Use this template_ to generate your own project, then:
+## Getting started
 
 ```bash
-git clone git@github.com:<UsernameOrOrganization>/drupal-template.git drupal-openai
-
+git clone https://github.com/MatthieuScarset/drupal-openai.git
 cd drupal-openai
-
-# Replace the project name (i.e. 'drupal-openai').
-code .env.example    # ->  DRUSH_OPTIONS_URI=https://drupal-openai.lndo.site
-code .lando.yml      # ->  name: drupal-openai
-
-# Create your env file now
+rm -rf .git/
 cp .env.example .env
-
-# Commit your changes
-git add . && git commit -m "Rename project" && git push
-
-# Start the project
+git init && git add . && git commit -m "chore: Init project" && git push
 lando start
-
-# Download dependencies
 lando composer install -o
-
-# Install Drupal
 lando drush site:install --existing-config -y
 lando drush user:password admin admin
-lando drush user:login # -> Ctrl+Click the URL to open your site :)
+lando drush user:login
 ```
 
-Start to build things!
+Get to work now!

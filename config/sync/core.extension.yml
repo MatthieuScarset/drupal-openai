@@ -41,7 +41,7 @@ module:
   update: 0
   user: 0
   views: 10
-  standard: 1000
+  minimal: 1000
 theme:
   claro: 0
-profile: standard
+profile: minimal

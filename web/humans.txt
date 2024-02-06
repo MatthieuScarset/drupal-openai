@@ -1,0 +1,9 @@
+/* TEAM */
+Name:         Matthieu Scarset
+Role:         Author of the project template 
+Site:         https://matthieuscarset.com
+
+/* SITE */
+Last update:  2024/02/02
+Language:     English
+Framework:    Drupal
